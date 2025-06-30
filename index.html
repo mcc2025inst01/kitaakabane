@@ -213,6 +213,14 @@
           $(".dai").css("font-family",FontFamily);
           $('#font_name').text($(this).text());
         }
+      });      
+
+      $(".selpref").on("click", function() {
+        const id_pref = $(this).attr("id");
+        if ( id_pref.indexOf('link') != -1 ) {
+          const pref_id = $(this).attr("id").replace("link","");
+          console.log(pref_id);
+        }
       });
     });
     </script>
